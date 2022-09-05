@@ -1,0 +1,69 @@
+body {
+    
+}
+
+sidebar-component {
+    position: absolute;
+    font-family: 'Roboto';
+}
+
+navbar-component {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 7em);
+    font-family: 'Montserrat';
+}
+
+report-component {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat';
+}
+
+.window-body {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 7em);
+    height: 100%;
+    padding: 6em 4em 4em 4em;
+    font-family: "Montserrat";
+}
+
+.create-reports {
+    position: relative;
+    width: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.create-reports img{
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 2em;
+}
+
+.create-reports h3{
+    opacity: 0.7;
+    text-align: center;
+}
+
+.create-reports p{
+    opacity: 0.7;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.report-button {
+    background-color: #027EE6;
+    color: white;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 8px 40px;
+    margin: auto;
+}
