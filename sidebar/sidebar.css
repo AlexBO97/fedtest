@@ -1,0 +1,46 @@
+.sidebar-body {
+    background-color: #181f2c;
+    width: 7em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+    direction: rtl;
+}
+
+.sidebar-body:after {
+    content: url("../images/exp.svg");
+    position: absolute;
+    left: 6.8em;
+    top: 2.3em;
+}
+
+.sidebar-button {
+    margin: auto;
+    width: 100%;
+    background-color: #181f2c;
+}
+
+.sidebar-text {
+    color: #D1D2D5;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.logo {
+    width: 2em;
+    display: flex;
+    margin: 2.5em auto 0.5em;
+}
+
+.button-image {
+    width: 1.6em;
+    display: flex;
+    margin: 2.5em auto 0.5em;
+}
+
+.sidebar-body::-webkit-scrollbar {
+    width: 0px;
+  }
+  
