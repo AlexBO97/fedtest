@@ -1,10 +1,16 @@
 body {
-    
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 sidebar-component {
     position: absolute;
     font-family: 'Roboto';
+    z-index: 9;
+}
+
+sidebar-component::-webkit-scrollbar {
+    width: 0px;
 }
 
 navbar-component {
@@ -12,6 +18,7 @@ navbar-component {
     right: 0;
     width: calc(100% - 7em);
     font-family: 'Montserrat';
+    z-index: 9;
 }
 
 report-component {
@@ -30,6 +37,7 @@ report-component {
     height: 100%;
     padding: 6em 4em 4em 4em;
     font-family: "Montserrat";
+    z-index: 9;
 }
 
 .create-reports {
@@ -38,9 +46,10 @@ report-component {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: 0.5s all ease;
 }
 
-.create-reports img{
+.create-reports img {
     width: 70%;
     position: relative;
     left: 50%;
@@ -48,12 +57,12 @@ report-component {
     margin-bottom: 2em;
 }
 
-.create-reports h3{
+.create-reports h3 {
     opacity: 0.7;
     text-align: center;
 }
 
-.create-reports p{
+.create-reports p {
     opacity: 0.7;
     letter-spacing: 2px;
     text-align: center;
@@ -66,4 +75,26 @@ report-component {
     width: fit-content;
     padding: 8px 40px;
     margin: auto;
+    cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(205, 205, 205);
+    border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(147, 147, 147);
 }

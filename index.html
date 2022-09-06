@@ -28,7 +28,26 @@
         </div>
     </div>
 
-    <report-component></report-component>
+    <report-component class="report-component"></report-component>
+
+    <script>
+        const reportButton = document.querySelector('.report-button');
+        
+        reportButton.addEventListener("click", () => {
+            const createReports = document.querySelector('.create-reports'); 
+            const overlay = document.querySelector('.overlay'); 
+            const reportBody = document.querySelector('.report-body')
+            const reportComponent = document.querySelector('.report-component');
+            createReports.style.opacity = 0;
+            overlay.style.transition = "0.5s all ease";
+            reportBody.style.transition = "0.5s all ease";
+            reportBody.style.transform = "translateY(0%)";
+            reportBody.style.opacity = 1;
+            overlay.style.opacity = 0.3;
+            reportComponent.style.zIndex = 10;
+        })
+        
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
